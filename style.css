@@ -3,7 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    background-color: #C4E3CB;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    padding: 12px;
+    list-style-type: none;
+}
+
+li > a {
+   color: #14B1AB;
+   text-decoration: none;
     
+}
+
+li > a:hover {
+    color: #466551;
+    transition: all 0.5s ease-in-out;
 }
 
 .container {
@@ -56,7 +81,7 @@ button {
 }
 
 button:hover {
-    color: #4B125C;
+    color: #466551;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
@@ -87,4 +112,18 @@ button:hover {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14B1AB;
+}
+
+.aboutWrapper {
+    display: flex;
+    gap: 40px;
 }
